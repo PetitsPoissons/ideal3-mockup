@@ -1,0 +1,9 @@
+.parallax-container {
+  height: 80vh;
+}
+.carousel {
+  height: 100%;
+}
+.carousel .carousel-item {
+  visibility: visible;
+}
