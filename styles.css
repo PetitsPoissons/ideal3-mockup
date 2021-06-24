@@ -1,9 +1,46 @@
-.parallax-container {
-  height: 80vh;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.main-wrapper {
+  width: 100%;
+  background: #00f;
+  padding-bottom: 10px;
+}
+
+.slider-holder {
+  width: 100%;
+  /* height: 85vh; */
+  background: #f00;
+  padding-bottom: 10px;
+}
+
 .carousel {
-  height: 100%;
+  height: 85vh !important;
 }
-.carousel .carousel-item {
-  visibility: visible;
+
+.cc1 {
+  background-image: url('images/stadium-lg-25dpi.jpeg');
+}
+
+.cc2 {
+  background-image: url('images/race-track-lg-25dpijpg.jpeg');
+}
+
+.cc3 {
+  background-image: url('images/construction-lg-25dpi.jpeg');
+}
+
+.cc4 {
+  background-image: url('images/concert-lg-300dpi.jpeg');
+}
+
+.cc1,
+.cc2,
+.cc3,
+.cc4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
