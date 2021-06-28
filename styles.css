@@ -32,9 +32,15 @@ nav {
 }
 
 nav ul a {
-  color: white;
   font-family: var(--montserrat);
   font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
+    0px -5px 35px rgba(0, 0, 0, 0.3);
+}
+
+nav ul a:hover {
+  color: var(--yellow);
 }
 
 /* nav img {
@@ -67,10 +73,27 @@ nav ul a {
 }
 
 .slider .slides li .caption {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; */
+  font-family: var(--montserrat);
+}
+
+.slider .slides li .caption h3 {
+  font-weight: 700;
+  color: white;
+  /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15); */
+}
+
+.slider .slides li .caption h3,
+.slider .slides li .caption h4 {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .slider .indicators .indicator-item {
@@ -78,7 +101,7 @@ nav ul a {
 }
 
 .slider .indicators .indicator-item.active {
-  background: yellow;
+  background: var(--yellow);
 }
 
 /* ------- Text Block ------- */
