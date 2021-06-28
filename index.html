@@ -28,62 +28,112 @@
     <title>ideal3</title>
   </head>
   <body>
-    <!-- navbar -->
-    <!-- <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper grey darken-3">
-          <div class="container">
-            <a href="" class="brand-logo">
-              <img src="assets/ideal3-logo.png" alt="" class="responsive-img" />
-            </a>
-            <a href="" class="sidenav-trigger" data-target="mobile-menu">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#"></a>About</li>
-              <li><a href="#"></a>Services</li>
-              <li><a href="#"></a>Team</li>
-              <li><a href="#"></a>Contact</li>
-            </ul>
-            <ul class="sidenav grey lighten-2" id="mobile-menu">
-              <li><a href="#"></a>About</li>
-              <li><a href="#"></a>Services</li>
-              <li><a href="#"></a>Team</li>
-              <li><a href="#"></a>Contact</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div> -->
-
-    <!-- Slider -->
     <div class="main-wrapper">
-      <div class="slider-holder">
-        <div class="carousel carousel-slider center">
-          <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
+      <div class="navbar-fixed">
+        <nav class="black">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+              <img
+                src="./images/ideal3-logo/ideal3-logo-72dpi.png"
+                class="responsive-img"
+                alt="company logo"
+                id="nav-logo"
+              />
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
-          <div class="carousel-item cc1 white-text" href="#one!">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-          </div>
-          <div class="carousel-item cc2 white-text" href="#two!">
-            <h2>Second Panel</h2>
-            <p class="white-text">This is your second panel</p>
-          </div>
-          <div class="carousel-item cc3 white-text" href="#three!">
-            <h2>Third Panel</h2>
-            <p class="white-text">This is your third panel</p>
-          </div>
-          <div class="carousel-item cc4 white-text" href="#four!">
-            <h2>Fourth Panel</h2>
-            <p class="white-text">This is your fourth panel</p>
-          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- * * * * * * * * * * *  Slider  * * * * * * * * * * * -->
+
+      <div class="slider">
+        <div
+          style="
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+          "
+        >
+          <ul class="slides">
+            <li>
+              <img src="images/ideal3-backgrounds/construction-lg-25dpi.jpg" />
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/ideal3-backgrounds/stadium-lg-25dpi.jpg" />
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/ideal3-backgrounds/racetrack-lg-25dpi.jpg" />
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/ideal3-backgrounds/concert-lg-300dpi.jpg" />
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- footer -->
+      <!-- test section -->
+      <div class="container test">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at
+          lacus congue, suscipit elit nec, tincidunt orci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at
+          lacus congue, suscipit elit nec, tincidunt orci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at
+          lacus congue, suscipit elit nec, tincidunt orci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at
+          lacus congue, suscipit elit nec, tincidunt orci.
+        </p>
+      </div>
+    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
