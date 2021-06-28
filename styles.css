@@ -19,16 +19,57 @@
 }
 
 body {
+  font-family: var(--source);
   font-size: 1.6rem;
-  line-height: 1.7em;
+  line-height: 1.5em;
   background: white;
   color: var(--anthracite);
+}
+
+.yellow-bg {
+  background: var(--yellow);
+}
+.yellow-txt {
+  color: var(--yellow);
+}
+.yellow-txt-shadow {
+  text-shadow: 0px 1px 1px var(--yellow);
+}
+
+.grey-bg {
+  background: var(--grey);
+}
+.grey-txt {
+  color: var(--grey);
+}
+.grey-txt-shadow {
+  text-shadow: 0px 1px 1px var(--grey);
+}
+
+.anthracite-bg {
+  background: var(--anthracite);
+}
+.anthracite-txt {
+  color: var(--anthracite);
+}
+.anthracite-txt-shadow {
+  text-shadow: 0px 1px 1px var(--anthracite);
+}
+
+.emboss-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
+    0px -5px 35px rgba(0, 0, 0, 0.3);
+}
+.card-panel,
+.card {
+  border-radius: 5px;
 }
 
 /* ------- Navbar ------- */
 
 nav {
-  background: linear-gradient(to right, transparent 0%, black 100%);
+  background: linear-gradient(to right, white 0%, black 100%);
 }
 
 nav ul a {
@@ -106,13 +147,73 @@ nav ul a:hover {
 
 /* ------- Text Block ------- */
 .container.block-wrapper {
-  height: 50vh;
   width: 100%;
   border-radius: 5px;
   background: linear-gradient(to right, white 0%, black 100%);
 }
 
-.cc1 {
+#card-panel-home {
+  margin: 3rem 0 3rem 3rem;
+  font-family: var(--montserrat);
+}
+
+#card-panel-connect {
+  margin: 3rem;
+}
+
+#card-panel-connect .card-title {
+  font-family: var(--montserrat);
+}
+
+#home-text {
+  margin: 0 3rem 3rem;
+}
+
+#card-panel-connect .card-title {
+  font-weight: 500;
+}
+
+#card-panel-connect .collection .collection-item {
+  display: flex;
+}
+
+.collection .collection-item.avatar {
+  padding: 10px;
+}
+
+/* ------- Footer ------- */
+.block-wrapper .row {
+  margin: 0;
+}
+
+.footer-home {
+  font-family: var(--montserrat);
+  font-size: 1.3rem;
+  border-top: 0.2rem solid var(--yellow);
+  padding: 2rem 1rem;
+}
+
+/* ------- Team Block ------- */
+.team-wrapper {
+  background: linear-gradient(to right, white 0%, black 100%);
+}
+
+.bios {
+  margin: 5rem auto;
+}
+
+.bios .card {
+  margin: auto 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+
+.bios .card .card-reveal .card-title {
+  border-bottom: 1px solid var(--yellow);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+/* .cc1 {
   background-image: url('images/ideal3-backgrounds/construction-lg-25dpi.jpg');
 }
 
@@ -135,4 +236,4 @@ nav ul a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
