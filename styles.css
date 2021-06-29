@@ -16,13 +16,16 @@
   --yellow: #fcb816;
   --grey: #9d9fa1;
   --anthracite: #383e42;
+  --blue: #b3cbe4;
+  --grey-gradient: linear-gradient(to right, #fff, #9d9fa1);
+  --silver-gradient: linear-gradient(to right, #fff 0%, #000 100%);
 }
 
 body {
   font-family: var(--source);
   font-size: 1.6rem;
   line-height: 1.5em;
-  background: white;
+  background: #fff;
   color: var(--anthracite);
 }
 
@@ -56,11 +59,53 @@ body {
   text-shadow: 0px 1px 1px var(--anthracite);
 }
 
-.emboss-text {
-  color: rgba(255, 255, 255, 0.6);
+.blue-bg {
+  background: var(--blue);
+}
+.blue-txt {
+  color: var(--blue);
+}
+.blue-txt-shadow {
+  text-shadow: 1px 2px 3px var(--blue);
+}
+
+.white-txt-shadow {
+  text-shadow: 2px 2px 3px #fff;
+}
+
+.emboss-txt {
   text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
     0px -5px 35px rgba(0, 0, 0, 0.3);
 }
+
+.glow-txt-heavy {
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
+    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
+    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
+    5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+.glow-txt-medium {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.glow-txt-light {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.filter-drop-shadow {
+  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+  -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+  -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+  -o-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+}
+
 .card-panel,
 .card {
   border-radius: 5px;
@@ -69,15 +114,13 @@ body {
 /* ------- Navbar ------- */
 
 nav {
-  background: linear-gradient(to right, white 0%, black 100%);
+  background: var(--silver-gradient);
 }
 
 nav ul a {
   font-family: var(--montserrat);
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
-    0px -5px 35px rgba(0, 0, 0, 0.3);
+  color: var(--grey);
 }
 
 nav ul a:hover {
@@ -88,14 +131,6 @@ nav ul a:hover {
   width: 200px;
   height: auto;
 } */
-
-.filter-drop-shadow {
-  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -o-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-}
 
 /* ------- Slider ------- */
 .slider-wrapper {
@@ -119,26 +154,21 @@ nav ul a:hover {
   left: 50%;
   transform: translate(-50%, -50%) !important; */
   font-family: var(--montserrat);
+  /* background: var(--grey-gradient);
+  padding: 0 10px; */
 }
 
 .slider .slides li .caption h3 {
   font-weight: 700;
-  color: white;
-  /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15); */
+  color: #000;
 }
 
-.slider .slides li .caption h3,
 .slider .slides li .caption h4 {
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .slider .indicators .indicator-item {
-  background: grey;
+  background: var(--grey);
 }
 
 .slider .indicators .indicator-item.active {
@@ -149,7 +179,7 @@ nav ul a:hover {
 .container.block-wrapper {
   width: 100%;
   border-radius: 5px;
-  background: linear-gradient(to right, white 0%, black 100%);
+  background: var(--grey-gradient);
 }
 
 #card-panel-home {
@@ -195,7 +225,7 @@ nav ul a:hover {
 
 /* ------- Team Block ------- */
 .team-wrapper {
-  background: linear-gradient(to right, white 0%, black 100%);
+  background: var(--grey-gradient);
 }
 
 .bios {
