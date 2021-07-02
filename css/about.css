@@ -1,0 +1,88 @@
+/* ------- Slider ------- */
+.slider-wrapper {
+  width: 100%;
+  height: 100vh !important;
+  position: relative;
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.slider-holder {
+  width: 100%;
+  height: 100vh !important;
+  position: fixed;
+  z-index: -1;
+}
+
+.slider .slides li .caption {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important; */
+  font-family: var(--montserrat);
+  /* background: var(--grey-gradient);
+  padding: 0 10px; */
+}
+
+.slider .slides li .caption h3 {
+  font-weight: 700;
+  color: #000;
+}
+
+.slider .slides li .caption h4 {
+  color: #fff;
+}
+
+.slider .indicators .indicator-item {
+  background: var(--grey);
+}
+
+.slider .indicators .indicator-item.active {
+  background: var(--yellow);
+}
+
+/* ------- About Text ------- */
+.container.about-wrapper {
+  width: 100%;
+  border-radius: 5px;
+  background: var(--grey-gradient);
+}
+
+#about-text {
+  margin: 0 3rem 3rem;
+}
+
+#about-punch-line {
+  margin: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+#card-panel-home {
+  margin: 3rem 0 3rem 3rem;
+  font-family: var(--montserrat);
+}
+
+#card-panel-connect {
+  margin: 3rem;
+}
+
+#card-panel-connect .card-title {
+  font-family: var(--montserrat);
+  font-weight: 500;
+}
+
+#card-panel-connect .collection .collection-item {
+  display: flex;
+}
+
+#card-panel-connect .collection .collection-item.avatar {
+  padding: 10px;
+}
+
+/* ------- Footer ------- */
+.about-wrapper .row {
+  margin: 0;
+}
