@@ -23,20 +23,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>ideal3 - The Team</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>ideal3 - Contact</title>
   </head>
+
   <body>
-    <div class="team-wrapper">
+    <div id="contact-wrapper">
       <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
       <div class="navbar-fixed">
-        <nav>
+        <nav class="z-depth-0" id="nav-holder">
           <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">
               <img
                 src="./images/ideal3-logo/ideal3-logo-72dpi.png"
-                class="responsive-img filter-drop-shadow"
+                class="responsive-img filter-drop-shadow-black"
                 alt="company logo"
                 id="nav-logo"
               />
@@ -45,36 +52,91 @@
               ><i class="material-icons yellow-txt">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/team.html">Team</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li>
+                <a href="./index.html" class="emboss-txt">About</a>
+              </li>
+              <li>
+                <a href="./services.html" class="emboss-txt">Services</a>
+              </li>
+              <li>
+                <a href="./team.html" class="emboss-txt">Team</a>
+              </li>
+              <li>
+                <a href="./contact.html" class="emboss-txt">Contact</a>
+              </li>
             </ul>
           </div>
+          <div id="nav-border"></div>
         </nav>
       </div>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="/index.html">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="/team.html">Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
 
-      <!-- bios section -->
+      <!-- contact section -->
 
-      <section class="container section contact" id="contact"></section>
-
-      <!-- footer -->
-
-      <footer class="footer-home">
-        <div class="footer-copyright">
-          <div class="container">
-            © 2021 Copyright Text
-            <a class="emboss-text right" href="#!">More Links</a>
+      <section id="contact">
+        <div class="container">
+          <h4 class="contact-heading">Get in Touch</h4>
+          <div class="row">
+            <div class="col s12 l5">
+              <div class="row contact-txt">
+                For any inquiries, please call, email or fill in our contact
+                form.
+              </div>
+              <div class="row">
+                <div class="col s12 m6 contact-info">
+                  <span>1.844.4IDEAL3</span>
+                  <span>International: +1-612-216-2670</span>
+                </div>
+                <div class="col s12 m6 contact-info">
+                  <span>Email</span>
+                  <span>info@ideal3.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 l5 offset-l2">
+              <form>
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email" />
+                  <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                  <textarea
+                    id="message"
+                    class="materialize-textarea"
+                    cols="20"
+                    rows="20"
+                  ></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+                <div class="input-field center">
+                  <button class="btn waves-effect waves-light">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+      <div id="footer-img">
+        <img src="/images/ideal3-backgrounds/cityscape-lg-240dpi.jpg" alt="" />
+      </div>
     </div>
+    <!-- footer -->
+    <!-- <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 Copyright Text
+          <a class="emboss-text right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer> -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

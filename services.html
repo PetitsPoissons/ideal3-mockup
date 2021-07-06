@@ -23,112 +23,270 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>ideal3 - The Team</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <title>ideal3 - Services</title>
   </head>
   <body>
-    <div class="team-wrapper">
-      <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">
-              <img
-                src="./images/ideal3-logo/ideal3-logo-72dpi.png"
-                class="responsive-img filter-drop-shadow"
-                alt="company logo"
-                id="nav-logo"
-              />
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-              ><i class="material-icons yellow-txt">menu</i></a
-            >
-            <ul class="right hide-on-med-and-down">
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/team.html">Team</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+    <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
+    <div class="navbar-fixed">
+      <nav class="z-depth-0" id="nav-holder">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img
+              src="./images/ideal3-logo/ideal3-logo-72dpi.png"
+              class="responsive-img filter-drop-shadow-black"
+              alt="company logo"
+              id="nav-logo"
+            />
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons yellow-txt">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="./index.html" class="emboss-txt">About</a>
+            </li>
+            <li>
+              <a href="./services.html" class="emboss-txt">Services</a>
+            </li>
+            <li>
+              <a href="./team.html" class="emboss-txt">Team</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="emboss-txt">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div id="nav-border"></div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="./index.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./team.html">Team</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <!-- services section -->
+
+    <section id="services">
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="./images/ideal3-backgrounds/insurance-claims2.jpeg" />
+        </div>
+      </div>
+      <div class="section section2">
+        <div class="row container">
+          <div class="col s12 m6">
+            <h3 class="header">ideal3 Claims Services</h3>
+            <p class="section-paragraph">
+              ideal3 is a specialty independent claims and risk management firm
+              founded by insurance and legal experts. Made up exclusively of
+              adjusters, attorneys, and legal professionals with more than 60
+              years of experience, ideal3 delivers timely and sound
+              claims-handling. ideal3's ancillary claims services, pre-claim
+              investigation, claims management, risk consulting, and loss
+              control services are benefiting our carrier and insured clients
+              across the globe, including London, Germany, and North America
+            </p>
+          </div>
+          <div class="col s12 m6 img-container">
+            <img
+              class="img-test1"
+              src="./images/ideal3-backgrounds/trampoline2.jpeg"
+            />
+            <img
+              class="img-test2"
+              src="./images/ideal3-backgrounds/kart1.jpeg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="./images/ideal3-backgrounds/water-park1.jpeg" />
+        </div>
+      </div>
+      <div class="section section3 container">
+        <div class="row">
+          <h3 class="header">The ideal3 Way</h3>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <p class="section-paragraph">
+              At ideal3, we understand how critical effective claims management
+              is to the success and profitability of any insurance program. Our
+              claims service is backed with a promise to provide focused and
+              prompt reporting, early intervention, intelligent investigation,
+              timely solutions, and proper resolutions. This promise is
+              fulfilled in a way that leavea every client feeling like ideal3 is
+              not only an invested partner, but an invaluable extension of each
+              client's own business.
+            </p>
+            <br />
+            <p class="section-paragraph">
+              When it comes to managing claims, ideal3 is committed to the
+              following:
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Timely reviewing claims for coverage and reporting to the
+                  appropriate insurer in accordance with claims management
+                  agreement;
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Promptly paying all covered claims payable within draft
+                  authority;
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Assisting clients with information flow, policy information,
+                  and complex coveragge issues;
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Facilitating investigative meetings with the clients and
+                  coverholders;
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Reviewing individual claims with clients to determine and
+                  evaluate strategy, reserves, and resolution of claims;
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">grade</i>
+                <p>
+                  Analyzing and timely reporting industry and claims trends for
+                  proactive risk and claims avoidance.
+                </p>
+              </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="/index.html">About</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/team.html">Team</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-
-      <!-- bios section -->
-
-      <section>
-        <div class="parallax-container">
-          <div class="parallax">
-            <img src="./images/ideal3-backgrounds/stadium-lg-25dpi.jpg" />
-          </div>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="./images/ideal3-backgrounds/insurance-claims3.jpeg" />
         </div>
-        <div class="section white">
-          <div class="row container">
-            <h2 class="header">ideal3 Claims Services</h2>
-            <p class="grey-text text-darken-3 lighten-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Excepturi, asperiores quo alias illo maxime laudantium pariatur
-              reiciendis voluptates molestiae cum quas tempore distinctio
-              corporis vitae illum rerum at in sed vel aperiam minima quaerat.
-              Voluptatem quia minus reiciendis incidunt ipsum ipsam, ex
-              laudantium magnam doloribus nemo doloremque assumenda, cum odio?
-              Cum in iusto beatae maxime, sed alias natus eum dolorum reiciendis
-              vero! Illum, blanditiis. Facere ex quibusdam deserunt, eum eveniet
-              nam nesciunt quos odit magni. Ad voluptas, excepturi enim esse hic
-              fuga dignissimos temporibus optio praesentium sit quod aperiam
-              dolores saepe consectetur ipsa. Rem, nulla laborum dolorum
-              expedita minima asperiores.
+      </div>
+      <div class="section section4">
+        <div class="row container">
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>
+                ideal3 is firmly committed to treating policyholders and
+                claimants fairly. All our adjusters and claims attorneys are
+                trained to:
+              </h4>
+            </li>
+            <li class="collection-item">
+              Listen, be fair, be open, and execute the carrier's duty under the
+              insurance contract in good faith.
+            </li>
+            <li class="collection-item">
+              Befamiliar and in compliance with those laws and regulations that
+              impact claims in the appropriate state, and treat policyholders
+              consistent with the requirements of the law.
+            </li>
+            <li class="collection-item">
+              Explain all relevant coveragges under the policy. Encourage
+              policyholders to report all losses and avail themselves of
+              benefits conferred under their coverages.
+            </li>
+            <li class="collection-item">
+              Diligently investigate the facts to determine if a claim is valid,
+              reasonably evaluate the claim, and act promptly in resolving the
+              claim. If it is necessary to reject a claim for coverage or
+              damages, it should be done promptly and courteously, with an
+              explanation for the decision.
+            </li>
+            <li class="collection-item">
+              Make an objective evaluation of the facts and circumstances
+              supporting policyholders' claims.
+            </li>
+            <li class="collection-item">
+              Give insureds a reasonable opportunity to comply with their
+              responsibilities under the policy. If a claim is rejected, be
+              willing to listen to subsequent input from the insured. Complete
+              any necessary follow up in a timely fashion, giving due
+              consideration to any additional findings.
+            </li>
+            <li class="collection-item">
+              Communicate with and be responsive to inquiries from insureds by
+              promptly responding to letters and phone calls.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="./images/ideal3-backgrounds/ferris-wheel1.jpeg" />
+        </div>
+      </div>
+      <div class="section section5 container">
+        <div class="row">
+          <h3 class="header">ideal3 Risk Management Services</h3>
+        </div>
+        <div class="row">
+          <div class="col s12 m7">
+            <p class="section-paragraph">
+ideal3 also provides risk management services. To ideal3, risk management equals responsibility. Clients benefit from the ideal approach to identifying and managging risks, the commitment to identifying cost effective solutions, and dedication to continued improvement.
+            </p>
+            <br/>
+            <p class="section-paragraph">
+              Services provided with a hands-on approach include:
+              <ul>
+                <li>Waiver reviews;</li>
+                <li>Surveillance camera audits;</li>
+                <li>Safety compliance and rule-setting;</li>
+                <li>Warning signs and product labels;</li>
+                <li>Risk transfer and subrogation opportunities;</li>
+                <li>Remote and on-site risk management audit inspections</li>
+              </ul>
             </p>
           </div>
-        </div>
-        <div class="parallax-container">
-          <div class="parallax">
-            <img src="./images/ideal3-backgrounds/construction-lg-25dpi.jpg" />
+          <div class="col s12 m5">
+            <a href="./contact.html">
+            <p class="flow-text black-text" id="services-punch-line">
+              Contact ideal3 for more information about our risk management consultation services and how we may assist you.
+            </p></a>
           </div>
         </div>
-        <div class="section white">
-          <div class="row container">
-            <h2 class="header">The ideal3 Way</h2>
-            <p class="grey-text text-darken-3 lighten-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Excepturi, asperiores quo alias illo maxime laudantium pariatur
-              reiciendis voluptates molestiae cum quas tempore distinctio
-              corporis vitae illum rerum at in sed vel aperiam minima quaerat.
-              Voluptatem quia minus reiciendis incidunt ipsum ipsam, ex
-              laudantium magnam doloribus nemo doloremque assumenda, cum odio?
-              Cum in iusto beatae maxime, sed alias natus eum dolorum reiciendis
-              vero! Illum, blanditiis. Facere ex quibusdam deserunt, eum eveniet
-              nam nesciunt quos odit magni. Ad voluptas, excepturi enim esse hic
-              fuga dignissimos temporibus optio praesentium sit quod aperiam
-              dolores saepe consectetur ipsa. Rem, nulla laborum dolorum
-              expedita minima asperiores.
-            </p>
-          </div>
-        </div>
-        <div class="parallax-container">
-          <div class="parallax">
-            <img src="./images/ideal3-backgrounds/construction-lg-25dpi.jpg" />
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- footer -->
+    <!-- footer -->
 
-      <section class="">
-        <div class="footer-copyright">
-          <div class="container">
-            © 2021 Copyright Text
-            <a class="emboss-text right" href="#!">More Links</a>
-          </div>
+    <section class="">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 Copyright Text
+          <a class="emboss-text right" href="#!">More Links</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

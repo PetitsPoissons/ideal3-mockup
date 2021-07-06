@@ -1,6 +1,6 @@
 /* ------- Team Block ------- */
 #bios {
-  margin: 8rem 0;
+  margin: 6rem 0;
 }
 
 .bios-heading {
@@ -157,6 +157,14 @@
   align-items: center;
   border-bottom: none;
   /* background: linear-gradient(rgba(250, 250, 250), rgb(215, 215, 215)); */
+}
+
+.card-reveal .collapsible .collapsible-header.no-collapsible {
+  justify-content: flex-start;
+}
+
+.card-reveal .collapsible i.material-icons.check-icon {
+  color: var(-turquoise) !important;
 }
 
 .card-reveal .collapsible .collapsible-body {
