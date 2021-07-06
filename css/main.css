@@ -13,24 +13,41 @@
 :root {
   --montserrat: 'Montserrat', sans-serif;
   --source: 'Source Sans Pro', sans-serif;
+  --transparent: rgba(255, 255, 255, 0);
   --yellow: #fcb816;
   --grey: #9d9fa1;
   --anthracite: #383e42;
   --blue: #b3cbe4;
+  --turquoise: #51b6d4;
+  --red: #a1101d;
+  --purple: #4d23e7;
+  --blue-gradient: linear-gradient(to right, var(--blue), #fff);
   --grey-gradient: linear-gradient(to right, #fff, #9d9fa1);
-  --silver-gradient: linear-gradient(to right, #fff 0%, #000 100%);
+  --silver-gradient: linear-gradient(to right, #fff, #383e42);
+  --yellow-gradient: linear-gradient(
+    55deg,
+    var(--transparent) 17%,
+    var(--yellow) 20%
+  );
+  --nav-gradient: linear-gradient(
+    to right,
+    #fff,
+    var(--grey) 70%,
+    var(--anthracite)
+  );
 }
 
 body {
   font-family: var(--source);
-  font-size: 1.6rem;
-  line-height: 1.5em;
-  background: #fff;
+  font-size: 10px;
+  line-height: 1.5;
+  background: var(--grey-gradient);
   color: var(--anthracite);
 }
 
 a {
   color: var(--grey);
+  text-decoration: none;
 }
 
 a:hover {
@@ -40,6 +57,10 @@ a:hover {
 .card-panel,
 .card {
   border-radius: 5px;
+}
+
+.no-bottom-border {
+  border-bottom: none;
 }
 
 /* ------- Colors & Shadows ------- */
@@ -80,17 +101,21 @@ a:hover {
   color: var(--blue);
 }
 .blue-txt-shadow {
-  text-shadow: 1px 2px 3px var(--blue);
+  text-shadow: 2px 2px 2px var(--blue);
 }
 
 .white-txt-shadow {
-  text-shadow: 2px 2px 3px #fff;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .emboss-txt {
-  /* text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
-    0px -5px 35px rgba(0, 0, 0, 0.3); */
-  color: red;
+  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
+    0px -5px 35px rgba(0, 0, 0, 0.3);
+}
+
+.emboss-white {
+  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.8),
+    0px -5px 35px rgba(0, 0, 0, 0.3);
 }
 
 .glow-txt-heavy {
@@ -113,18 +138,41 @@ a:hover {
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.filter-drop-shadow {
-  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  -o-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 1));
+.filter-drop-shadow-black {
+  -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 1));
+  -moz-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 1));
+  -ms-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 1));
+  -o-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 1));
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 1));
+}
+
+.filter-drop-shadow-white {
+  -webkit-filter: drop-shadow(0 3px 0 rgba(255, 255, 255, 1));
+  -moz-filter: drop-shadow(0 3px 0 rgba(255, 255, 255, 1));
+  -ms-filter: drop-shadow(0 3px 0 rgba(255, 255, 255, 1));
+  -o-filter: drop-shadow(0 3px 0 rgba(255, 255, 255, 1));
+  filter: drop-shadow(0 3px 0 rgba(255, 255, 255, 1));
+}
+
+.inset-shadow {
+  -moz-box-shadow: inset 0 0 5px var(--anthracite);
+  -webkit-box-shadow: inset 0 0 5px var(--anthracite);
+  box-shadow: inset 0 0 5px var(--anthracite);
 }
 
 /* ------- Navbar ------- */
-
 nav {
-  background: var(--silver-gradient);
+  background: var(--nav-gradient);
+  transition: 0.5s;
+}
+
+nav.nav-transparent {
+  background: var(--transparent);
+}
+
+nav ul,
+#nav-border {
+  transition: 2s;
 }
 
 nav ul a {
@@ -137,6 +185,25 @@ nav ul a {
   height: auto;
 } */
 
+#nav-border {
+  width: 100vw;
+  height: 2px;
+  background: var(--yellow-gradient);
+}
+
+.hidden {
+  display: none;
+}
+
+/* ------- Slider ------- */
+/* .slider .slides li .caption h3#red-caption {
+  -webkit-text-fill-color: var(--red);
+}
+
+.slider .slides li .caption h3#purple-caption {
+  -webkit-text-fill-color: var(--purple);
+} */
+
 /* ------- Footer ------- */
 .footer-home {
   font-family: var(--montserrat);
@@ -145,26 +212,6 @@ nav ul a {
   padding: 2rem 1rem;
 }
 
-/* ------- Team Block ------- */
-.team-wrapper {
-  background: var(--grey-gradient);
-}
-
-.bios {
-  margin: 5rem auto;
-}
-
-.bios .card {
-  margin: auto 2rem;
-  font-size: 1.3rem;
-  line-height: 1.5em;
-}
-
-.bios .card .card-reveal .card-title {
-  border-bottom: 1px solid var(--yellow);
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
 /* .cc1 {
   background-image: url('images/ideal3-backgrounds/construction-lg-25dpi.jpg');
 }

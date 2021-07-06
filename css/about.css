@@ -1,4 +1,27 @@
+/* ------- Showcase ------- */
+#showcase-wrapper {
+  width: 100%;
+  height: 100vh !important;
+  position: relative;
+}
+
+/* ------- Navbar ------- */
+#menu-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* ------- Slider ------- */
+#slider-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh !important;
+  z-index: -1;
+}
+
 .slider-wrapper {
   width: 100%;
   height: 100vh !important;
@@ -26,11 +49,25 @@
 
 .slider .slides li .caption h3 {
   font-weight: 700;
-  color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--anthracite);
+  -webkit-text-fill-color: var(--yellow);
+}
+
+#caption3 {
+  -webkit-text-fill-color: var(--blue);
+}
+
+#caption4 {
+  -webkit-text-fill-color: var(--grey);
 }
 
 .slider .slides li .caption h4 {
-  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-fill-color: #fff;
 }
 
 .slider .indicators .indicator-item {

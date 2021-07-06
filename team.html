@@ -23,182 +23,386 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/team.css" />
     <title>ideal3 - The Team</title>
   </head>
+
   <body>
-    <div class="team-wrapper">
-      <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">
-              <img
-                src="./images/ideal3-logo/ideal3-logo-72dpi.png"
-                class="responsive-img filter-drop-shadow"
-                alt="company logo"
-                id="nav-logo"
-              />
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-              ><i class="material-icons yellow-txt">menu</i></a
-            >
-            <ul class="right hide-on-med-and-down">
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/team.html">Team</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="/index.html">About</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/team.html">Team</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-
-      <!-- bios section -->
-
-      <section class="container section bios" id="bios">
-        <div class="row">
-          <div class="col s12 l6">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img
-                  class="activator"
-                  src="./images/ideal3-adam/adam-sm-72dpi.jpg"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Adam Bunge<i class="material-icons right">more_vert</i></span
-                >
-                <div>Chairman</div>
-              </div>
-              <div class="card-action">
-                <a href="#">Email Adam</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title anthracite-txt"
-                  >Adam Bunge<i class="material-icons right">close</i></span
-                >
-                <div>
-                  Adam Bunge is a coverage attorney who has handled more than
-                  10,000 claims in his 20+ years servicing the domestic and E&S
-                  insurance market, including litigation, coverage, and program
-                  risk management practices in the following areas:
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l6">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img
-                  class="activator"
-                  src="./images/ideal3-backgrounds/racetrack-md-72dpi.jpg"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Firstname Lastname<i class="material-icons right"
-                    >more_vert</i
-                  ></span
-                >
-                <div>Title</div>
-              </div>
-              <div class="card-action">
-                <a href="#">Email Name</a>
-              </div>
-              <div class="card-reveal anthracite-txt">
-                <span class="card-title grey-text text-darken-4"
-                  >Firstname Lastname<i class="material-icons right"
-                    >close</i
-                  ></span
-                >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                  qui suscipit voluptate ex ad magnam! Harum eaque itaque soluta
-                  laboriosam. Dolores consequatur quidem maxime doloribus
-                  consectetur rerum, aliquid repellat, fugit deserunt aliquam
-                  quia, tempora aperiam nesciunt expedita adipisci. Eius
-                  ratione, similique tempore excepturi voluptatem eligendi
-                  quaerat? Corporis illo sapiente quidem.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                  qui suscipit voluptate ex ad magnam! Harum eaque itaque soluta
-                  laboriosam. Dolores consequatur quidem maxime doloribus
-                  consectetur rerum, aliquid repellat, fugit deserunt aliquam
-                  quia, tempora aperiam nesciunt expedita adipisci. Eius
-                  ratione, similique tempore excepturi voluptatem eligendi
-                  quaerat? Corporis illo sapiente quidem.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                  qui suscipit voluptate ex ad magnam! Harum eaque itaque soluta
-                  laboriosam. Dolores consequatur quidem maxime doloribus
-                  consectetur rerum, aliquid repellat, fugit deserunt aliquam
-                  quia, tempora aperiam nesciunt expedita adipisci. Eius
-                  ratione, similique tempore excepturi voluptatem eligendi
-                  quaerat? Corporis illo sapiente quidem.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
+    <div class="navbar-fixed">
+      <nav class="z-depth-0" id="nav-holder">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img
+              src="./images/ideal3-logo/ideal3-logo-72dpi.png"
+              class="responsive-img filter-drop-shadow-black"
+              alt="company logo"
+              id="nav-logo"
+            />
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons yellow-txt">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/index.html" class="emboss-txt">About</a></li>
+            <li><a href="/services.html" class="emboss-txt">Services</a></li>
+            <li><a href="/team.html" class="emboss-txt">Team</a></li>
+            <li><a href="/contact.html" class="emboss-txt">Contact</a></li>
+          </ul>
         </div>
-      </section>
-      <section class="container section bios" id="bios">
-        <div class="row">
-          <div class="col s12">
-            <div class="card horizontal">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img
-                  class="activator"
-                  src="./images/ideal3-adam/adam-sm-72dpi.jpg"
-                />
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h3 class="card-title activator anthracite-txt">
-                    Adam Bunge<i class="material-icons right">more_vert</i>
-                  </h3>
-                  <p>Chairman</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">Email Adam</a>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title anthracite-txt"
-                    >Adam Bunge<i class="material-icons right">close</i></span
-                  >
-                  <div>
-                    Adam Bunge is a coverage attorney who has handled more than
-                    10,000 claims in his 20+ years servicing the domestic and
-                    E&S insurance market, including litigation, coverage, and
-                    program risk management practices in the following areas:
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- footer -->
-
-      <footer class="footer-home">
-        <div class="footer-copyright">
-          <div class="container">
-            © 2021 Copyright Text
-            <a class="emboss-text right" href="#!">More Links</a>
-          </div>
-        </div>
-      </footer>
+        <div id="nav-border"></div>
+      </nav>
     </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/index.html">About</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/team.html">Team</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- bios section -->
+    <section id="bios">
+      <div class="container">
+        <h4 class="bios-heading">Meet the team</h4>
+        <div class="bios-card-wrapper">
+          <div class="card bios-card z-depth-2">
+            <img
+              src="images/ideal3-backgrounds/london-bldg.jpeg"
+              alt="card background"
+              class="bios-card-img"
+            />
+            <img
+              src="images/ideal3-adam/adam-sm-72dpi.jpg"
+              alt="profile image for Adam Bunge"
+              class="profile-img activator activator-adam"
+              id="profile-img-adam"
+            />
+            <h1>Adam Bunge</h1>
+            <p class="job-title">Chairman</p>
+            <p class="about">
+              Adam Bunge is a coverage attorney who has handled more than 10,000
+              claims in his 20+ years servicing the domestic and E&S insurance
+              market <span class="activator activator-adam">[...]</span>
+            </p>
+            <a href="#" class="btn waves-effect waves-light">Contact Adam</a>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </li>
+            </ul>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Adam Bunge<i class="material-icons right" id="close-adam-bio"
+                  >close</i
+                ></span
+              >
+              <p>
+                Adam Bunge is a coverage attorney who has handled more than
+                10,000 claims in his 20+ years servicing the domestic and E&S
+                insurance market, including litigation, coverage, and program
+                risk management practices in the following areas:
+              </p>
+
+              <ul class="collapsible z-depth-0">
+                <li>
+                  <div class="collapsible-header">
+                    <span>- Sports & Entertainment Liability</span
+                    ><i class="material-icons"
+                      ><span class="material-icons"> more_vert </span></i
+                    >
+                  </div>
+                  <div class="collapsible-body inset-shadow">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <span>Family Fun Centers</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Trampoline Parks</span>
+                      </li>
+                      <li class="collection-item"><span>Water Parks</span></li>
+                      <li class="collection-item">
+                        <span>Amusement Parks</span>
+                      </li>
+                      <li class="collection-item"><span>Motorsports</span></li>
+                      <li class="collection-item">
+                        <span>Casinos & Gaming</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Endurance Events</span>
+                      </li>
+                      <li class="collection-item"><span>Music</span></li>
+                      <li class="collection-item"><span>Film</span></li>
+                      <li class="collection-item no-bottom-border">
+                        <span>Touring</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <span>- Contingency</span
+                    ><i class="material-icons"
+                      ><span class="material-icons"> more_vert </span></i
+                    >
+                  </div>
+                  <div class="collapsible-body inset-shadow">
+                    <ul class="collection">
+                      <li class="collection-item"><span>Weather</span></li>
+                      <li class="collection-item">
+                        <span>Special Events</span>
+                      </li>
+                      <li class="collection-item no-bottom-border">
+                        <span>Prize Indemnity</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <span>- Professional Liability</span
+                    ><i class="material-icons"
+                      ><span class="material-icons"> more_vert </span></i
+                    >
+                  </div>
+                  <div class="collapsible-body inset-shadow">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <span>Architects & Engineers</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Real Estate Professionals</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Property Managers</span>
+                      </li>
+                      <li class="collection-item"><span>Lawyers</span></li>
+                      <li class="collection-item"><span>Accountants</span></li>
+                      <li class="collection-item">
+                        <span>Chemical Engineers</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Safety Professionals</span>
+                      </li>
+                      <li class="collection-item">
+                        <span>Insurance Intermediaries</span>
+                      </li>
+                      <li class="collection-item no-bottom-border">
+                        <span>Billing Professionals</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Employment Liability
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Coverage Litigation
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Silica/Asbestos/Mixed-Dust
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">Property</div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Inland Marine
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Construction
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Environmental/Toxic Tort
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">
+                    - Accident & Health
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header no-collapsible">- Cyber</div>
+                </li>
+              </ul>
+              <br />
+              <p>
+                Adam is the Chairman of ideal3, the claims and risk management
+                company he founded in 2015 to better serve his insurance
+                clients. As a former NCAA scholarship athlete (football), Adam
+                brings an unparalleled grit and toughness to his claims handling
+                and risk management philosophies. As a doppelganger for "Fat
+                Thor", Adam is ready to pick up his hammer and bring the thunder
+                for his clients.
+              </p>
+            </div>
+          </div>
+          <div class="card bios-card z-depth-2">
+            <img
+              src="images/ideal3-backgrounds/london-bldg.jpeg"
+              alt="card background"
+              class="bios-card-img"
+            />
+            <img
+              src="images/ideal3-terri/terri-sm-72dpi.jpg"
+              alt="profile image for Terri Stough"
+              class="profile-img activator activator-terri"
+              id="profile-img-terri"
+            />
+            <h1>Terri Stough</h1>
+            <p class="job-title">Director, Complex Claims & Legal</p>
+            <p class="about">
+              Terri Stough is an attorney with over a decade of experience in
+              defense litigation and coverage. Terri counsels domestic,
+              internation, and surplus lines carriers
+              <span class="activator activator-terri">[...]</span>
+            </p>
+            <a href="#" class="btn waves-effect waves-light">Contact Terri</a>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </li>
+            </ul>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Terri Stough<i
+                  class="material-icons right"
+                  id="close-terri-bio"
+                  >close</i
+                ></span
+              >
+              <p>
+                Terri Stough is an attorney with over a decade of experience in
+                defense litigation and coverage. Terri counsels domestic,
+                international, and surplus lines carriers regarding reserves,
+                scope of policy coverage, reservations of rights, disclaimers,
+                and declaratory judgments for all types of casualty, property,
+                inland marine, contingency, general and professional liability
+                policies. Prior to ideal3, Terri was in private practice
+                representing clients in ccommercial litigation, product
+                liability claims, personal injury, and replevin actions.
+              </p>
+              <br />
+              <p>
+                At ideal3, Terri handles complex claims involving catastrophic
+                injuries, coverage disputes, excess exposure, and sports and
+                entertainment programs. A Director of Complex Claims & Legal,
+                Terri leads her team to handle claims with through legal
+                analysis and exceptional investigative skills.
+              </p>
+            </div>
+          </div>
+          <div class="card bios-card z-depth-2">
+            <img
+              src="images/ideal3-backgrounds/london-bldg.jpeg"
+              alt="card background"
+              class="bios-card-img"
+            />
+            <img
+              src="images/ideal3-nati/natalie-sm-72dpi.jpg"
+              alt="profile image for Natalie Kelly"
+              class="profile-img activator activator-nati"
+              id="profile-img-nati"
+            />
+            <h1>Natalie Kelly</h1>
+            <p class="job-title">Managing Director</p>
+            <p class="about">
+              Natalie Kelly is a claims management professional with nearly two
+              decades of experience in handling and managing a wide variety of
+              claims <span class="activator activator-nati">[...]</span>
+            </p>
+            <a href="#" class="btn waves-effect waves-light">Contact Natalie</a>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </li>
+            </ul>
+            <div class="card-reveal">
+              <span class="card-title"
+                >Natalie Kelly<i
+                  class="material-icons right"
+                  id="close-nati-bio"
+                  >close</i
+                ></span
+              >
+              <p>
+                Natalie Kelly is a claims management professional with nearly
+                two decades of experience in handling and managing a wide
+                variety of claims, including Cyber Liability, Technology Errors
+                and Omissions, General Liability, Professional Liability,
+                Employment Practices Liability, Tenant Discrimination Liability,
+                and Billing Errors & Omissions Legal Expense. Natalie has
+                extensive experience with both open market and reinsurance
+                claims. Prior to joining ideal3, Natalie managed a claims team
+                of 25 claims professionals for a Lloyd's London coverholder with
+                significant claims-handling authority.
+              </p>
+              <br />
+              <p>
+                As the Managing Director of ideal3, Natalie oversees and manages
+                the operation of the company; develops, implements, and enforces
+                policies and procedures; ensures compliance with internal
+                controls and guidelines, fair-claims handling practices and
+                claims management agreements; handles reporting to clients and
+                reggulators; oversees quality assurance; and coordinates
+                internal and external audits. Natalie also manages and mentors
+                ideal3's claims adjusters and administrative team members.
+              </p>
+              <br />
+              <p>
+                Natalie is a licensed adjuster in all 34 states that issue
+                adjuster licenses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer-home">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 Copyright Text
+          <a class="emboss-text right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

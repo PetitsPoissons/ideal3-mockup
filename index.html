@@ -23,20 +23,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- Animate CSS -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about.css" />
     <title>ideal3</title>
   </head>
   <body>
+    <div id="showcase-wrapper">
     <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
-    <div class="navbar-fixed">
-      <nav>
+    <div class="navbar-fixed" id="menu-holder">
+      <nav class="z-depth-0 nav-transparent" id="nav-holder">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">
+          <a href="./index.html" class="brand-logo">
             <img
               src="./images/ideal3-logo/ideal3-logo-72dpi.png"
-              class="responsive-img filter-drop-shadow"
+              class="responsive-img filter-drop-shadow-black"
               alt="company logo"
               id="nav-logo"
             />
@@ -44,68 +50,71 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons yellow-txt">menu</i></a
           >
-          <ul class="right hide-on-med-and-down emboss-txt">
-            <li><a href="/index.html" class="emboss-txt">About</a></li>
-            <li><a href="/services.html" class="emboss-txt">Services</a></li>
-            <li><a href="/team.html">Team</a></li>
-            <li><a href="/contact.html" class="emboss-txt">Contact</a></li>
+          <ul class="right hide-on-med-and-down hidden">
+            <li><a href="./index.html" class="emboss-txt">About</a></li>
+            <li><a href="./services.html" class="emboss-txt">Services</a></li>
+            <li><a href="./team.html" class="emboss-txt">Team</a></li>
+            <li><a href="./contact.html" class="emboss-txt">Contact</a></li>
           </ul>
         </div>
+        <div class="hidden" id="nav-border"></div>
       </nav>
     </div>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="/index.html">About</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/team.html">Team</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="./index.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./team.html">Team</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
 
     <!-- * * * * * * * * * * *  Slider  * * * * * * * * * * * -->
-    <div class="slider-wrapper">
-      <div class="slider-holder">
-        <div class="slider fullscreen">
-          <ul class="slides">
-            <li>
-              <img src="images/ideal3-backgrounds/lloyd-lg-min.jpeg" />
-              <div class="caption center-align">
-                <h3 class="white-txt-shadow">
-                  SPECIALTY CLAIMS & RISK MANAGEMENT
-                </h3>
-                <h4 class="glow-txt-light">
-                  Ancillary claims services, pre-claim investigation,claims
-                  management, risk consulting, and loss control services
-                </h4>
-              </div>
-            </li>
-            <li>
-              <img src="images/ideal3-backgrounds/stadium-lg-25dpi.jpg" />
-              <div class="caption right-align">
-                <h3 class="white-txt-shadow">INSURANCE AND LEGAL EXPERTS</h3>
-                <h4 class="glow-txt-light">
-                  Dedicated team of expert adjusters, attorneys and legal
-                  professionals
-                </h4>
-              </div>
-            </li>
-            <li>
-              <img src="images/ideal3-backgrounds/racetrack-lg-25dpi.jpg" />
-              <div class="caption left-align">
-                <h3 class="white-txt-shadow">INTERNATIONAL MARKETS</h3>
-                <h4 class="glow-txt-light">London, Germany, North America</h4>
-              </div>
-            </li>
-            <li>
-              <img src="images/ideal3-backgrounds/concert-lg-300dpi.jpg" />
-              <div class="caption center-align">
-                <h3 class="white-txt-shadow">OVER 20,000 CLAIMS RESOLVED</h3>
-                <h4 class="glow-txt-light">60 years of combined experience</h4>
-              </div>
-            </li>
-          </ul>
+    <div id="slider-holder">
+      <div class="slider-wrapper">
+        <div class="slider-holder">
+          <div class="slider fullscreen">
+            <ul class="slides">
+              <li>
+                <img src="images/ideal3-backgrounds/lloyd-lg-min.jpeg" />
+                <div class="caption center-align glow-txt-light">
+                  <h3>
+                    SPECIALTY CLAIMS & RISK MANAGEMENT
+                  </h3>
+                  <h4>
+                    Ancillary claims services, pre-claim investigation,claims
+                    management, risk consulting, and loss control services
+                  </h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/ideal3-backgrounds/stadium-lg-25dpi.jpg" />
+                <div class="caption center-align glow-txt-light">
+                  <h3>INSURANCE AND LEGAL EXPERTS</h3>
+                  <h4>
+                    Dedicated team of expert adjusters, attorneys and legal
+                    professionals
+                  </h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/ideal3-backgrounds/racetrack-lg-25dpi.jpg" />
+                <div class="caption right-align glow-txt-light">
+                  <h3 id="red-caption">INTERNATIONAL MARKETS</h3>
+                  <h4>London, Germany, North America</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/ideal3-backgrounds/concert-lg-300dpi.jpg" />
+                <div class="caption left-align glow-txt-light">
+                  <h3 id="purple-caption">OVER 20,000 CLAIMS RESOLVED</h3>
+                  <h4>60 years of combined experience</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
+  </div>
     <!-- * * * * * * * * * * *  About Text  * * * * * * * * * * * -->
 
     <div class="container about-wrapper">
