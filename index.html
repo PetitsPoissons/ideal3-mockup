@@ -38,7 +38,7 @@
     <!-- * * * * * * * * * * *  Navbar  * * * * * * * * * * * -->
     <div class="navbar-fixed" id="menu-holder">
       <nav class="z-depth-0 nav-transparent" id="nav-holder">
-        <div class="nav-wrapper">
+        <div class="nav-wrapper container">
           <a href="./index.html" class="brand-logo">
             <img
               src="./images/ideal3-logo/ideal3-logo-72dpi.png"
@@ -47,14 +47,14 @@
               id="nav-logo"
             />
           </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons yellow-txt">menu</i></a
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger valign-wrapper"
+            ><i class="material-icons yellow-txt hamburger">menu</i></a
           >
           <ul class="right hide-on-med-and-down">
-            <li><a href="./index.html" class="emboss-txt">About</a></li>
-            <li><a href="./services.html" class="emboss-txt">Services</a></li>
-            <li><a href="./team.html" class="emboss-txt">Team</a></li>
-            <li><a href="./contact.html" class="emboss-txt">Contact</a></li>
+            <li><a href="./index.html" class="nav-link-border">About</a></li>
+            <li><a href="./services.html" class="nav-link-border">Services</a></li>
+            <li><a href="./team.html" class="nav-link-border">Team</a></li>
+            <li><a href="./contact.html" class="nav-link-border">Contact</a></li>
           </ul>
         </div>
         <div id="nav-border"></div>
@@ -105,8 +105,8 @@
               <li>
                 <img src="images/ideal3-backgrounds/concert-lg-300dpi.jpg" />
                 <div class="caption left-align glow-txt-light">
-                  <h3 id="purple-caption">OVER 20,000 CLAIMS RESOLVED</h3>
-                  <h4>60 years of combined experience</h4>
+                  <h3 id="purple-caption">60 YEARS OF COMBINED EXPERIENCE</h3>
+                  <h4>Over 20,000 claims resolved by our professionals</h4>
                 </div>
               </li>
             </ul>
@@ -117,9 +117,10 @@
   </div>
     <!-- * * * * * * * * * * *  About Text  * * * * * * * * * * * -->
 
-    <div class="container about-wrapper">
+    <div class="about-wrapper">
+      <div class="container">
       <div class="row">
-        <div class="col s7">
+        <div class="col s12 l7">
           <div class="row">
             <div class="col s12">
               <div class="card-panel anthracite-bg" id="card-panel-home">
@@ -131,14 +132,14 @@
           </div>
           <div class="row">
             <div class="col s12" id="about-text">
-              <p class="flow-text">
+              <p class="section flow-text">
                 We serve our partners with thoughtful guidance for
                 cost-effective claims and risk solutions. ideal3 was founded by
                 insurance and legal experts with deep roots supporting the
                 domestic and surplus lines insurance markets. We are passionate
                 about and dedicated to our craft.
               </p>
-              <p class="flow-text">
+              <p class="section flow-text">
                 ideal3's effective claims management is key to the success and
                 profitability of our clients, whether they are insurance
                 carriers, risk purchasing groups, or other risk-retention
@@ -149,7 +150,7 @@
                 factual and legal issues that arise throughout the life of a
                 claim.
               </p>
-              <p class="flow-text">
+              <p class="section flow-text">
                 At ideal3, we believe that each claim is unique and that a "one
                 size fits all" approach does not work. Our skilled and
                 experienced claims management team works directly with our
@@ -163,10 +164,10 @@
             </div>
           </div>
         </div>
-        <div class="col s5">
+        <div class="col s12 l5">
           <div class="row">
-            <div class="col s10 offset-s2">
-              <div class="card yellow-bg z-depth-4" id="card-panel-connect">
+            <div class="col s12">
+              <div class="card yellow-bg z-depth-2" id="card-panel-connect">
                 <div class="card-content">
                   <span
                     class="
@@ -174,21 +175,22 @@
                       grey-txt
                       anthracite-txt-shadow
                       center-align
+                      truncate
                     "
                     >CONNECT WITH US</span
                   >
                   <ul class="collection">
-                    <li class="collection-item avatar">
-                      <i class="material-icons small">access_time</i>
-                      <p>24/7 LIVE SUPPORT</p>
+                    <li class="collection-item avatar valign-wrapper">
+                      <i class="material-icons small circle">update</i>
+                      <p class="flow-text truncate">24/7 LIVE SUPPORT</p>
                     </li>
-                    <li class="collection-item avatar">
-                      <i class="material-icons small">call</i>
-                      <p>1.844.4IDEAL3</p>
+                    <li class="collection-item avatar valign-wrapper">
+                      <i class="material-icons small circle">call</i>
+                      <p class="flow-text truncate">1.844.4IDEAL3</p>
                     </li>
-                    <li class="collection-item avatar">
-                      <i class="material-icons small">send</i>
-                      <p>info@ideal3.com</p>
+                    <li class="collection-item avatar valign-wrapper">
+                      <i class="material-icons small circle">send</i>
+                      <p class="flow-text truncate"><a href="mailto:info@ideal3.com">info@ideal3.com</a></p>
                     </li>
                   </ul>
                 </div>
@@ -196,8 +198,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s10 offset-s2 valign-wrapper">
-              <p class="flow-text black-text yellow-txt-shadow" id="about-punch-line">
+            <div class="col s12 valign-wrapper">
+              <p class="flow-text black-text yellow-txt-shadow center-align" id="about-punch-line">
                 In today's competitive, novel, and litigious claims climate, it
                 is critical that you have a trusted independent claims manager
                 like ideal3.
@@ -206,15 +208,14 @@
           </div>
         </div>
       </div>
+      </div>
         <!-- footer -->
 
         <footer class="row footer-home">
-          <div class="footer-copyright">
             <div class="container">
-              © 2021 Copyright Text
-              <a class="emboss-text right" href="#!">More Links</a>
+              <div>© 2021 ideal3</div>
+              <div id="footer-links"><a class="emboss-text" href="mailto:info@ideal3.com">info@ideal3.com</a><div class="emboss-text">1.844.4IDEAL3</div></div>
             </div>
-          </div>
         </footer>
       </div>
     </div>

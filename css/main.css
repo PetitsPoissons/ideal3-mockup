@@ -161,47 +161,64 @@ a:hover {
 }
 
 /* ------- Navbar ------- */
-nav {
-  background: var(--nav-gradient);
-  transition: 0.5s;
+#nav-holder {
+  background: var(--anthracite);
+  height: 110px;
 }
 
-nav.nav-transparent {
+#nav-holder.nav-transparent {
   background: var(--transparent);
 }
 
-nav ul,
-#nav-border {
+#nav-holder ul {
+  height: 110px;
+  margin-right: 1rem;
   transition: 2s;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
 }
 
 nav ul a {
   font-family: var(--montserrat);
   font-size: 1.3rem;
+  text-shadow: 2px 8px 6px rgba(255, 255, 255, 0.2),
+  0px -5px 35px rgba(0, 0, 0, 0.3);
 }
 
-/* nav img {
+.nav-link-border {
+  border-bottom: 2px inset var(--yellow);
+}
+
+#nav-holder .brand-logo {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-logo {
   width: 200px;
   height: auto;
-} */
+}
 
-#nav-border {
+#nav-holder .sidenav-trigger {
+  height: 100%;
+  /* display: flex;
+  align-items: center; */
+}
+
+.hamburger {
+  font-size: 3rem !important;
+}
+
+/* #nav-border {
   width: 100vw;
   height: 2px;
-  background: var(--yellow-gradient);
-}
-
-.hidden {
-  display: none;
-}
-
-/* ------- Slider ------- */
-/* .slider .slides li .caption h3#red-caption {
-  -webkit-text-fill-color: var(--red);
-}
-
-.slider .slides li .caption h3#purple-caption {
-  -webkit-text-fill-color: var(--purple);
+  background: var(--yellow);
+  transition: 2s;
 } */
 
 /* ------- Footer ------- */
@@ -210,6 +227,29 @@ nav ul a {
   font-size: 1.3rem;
   border-top: 0.2rem solid var(--yellow);
   padding: 2rem 1rem;
+  background: var(--anthracite);
+  color: var(--grey);
+}
+
+.footer-home .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#footer-links a {
+  margin-right: 3rem;
+  transition: 0.5s;
+}
+
+#footer-links a:hover {
+  color: var(--yellow);
 }
 
 /* .cc1 {
@@ -236,3 +276,47 @@ nav ul a {
   background-repeat: no-repeat;
   background-position: center;
 } */
+
+/* ------- Media Queries ------- */
+@media screen and (max-width: 400px) {
+  .hamburger {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #nav-holder {
+    background: var(--nav-gradient);
+  }
+  #nav-holder ul {
+    padding-top: 1.2rem;
+  }
+  #nav-border {
+    background: linear-gradient(
+      55deg,
+      var(--transparent) 21%,
+      var(--yellow) 26%
+    );
+    transition: 2s;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #nav-border {
+    background: linear-gradient(
+      55deg,
+      var(--transparent) 19%,
+      var(--yellow) 24%
+    );
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #nav-border {
+    background: linear-gradient(
+      55deg,
+      var(--transparent) 16%,
+      var(--yellow) 21%
+    );
+  }
+}
