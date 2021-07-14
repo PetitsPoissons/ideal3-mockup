@@ -2,7 +2,7 @@
   font-size: 1.6rem;
 }
 
-.section2 .img-container {
+.section1 .img-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,14 +14,14 @@
   margin: 1rem 0;
 }
 
-.section2 .img-container img {
+.section1 .img-container img {
   width: 20rem;
   height: 18rem;
   border: 7px solid var(--grey);
   border-radius: 2px;
 }
 
-.section2 .img-container .img-test1 {
+.section1 .img-container .img-test1 {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -33,7 +33,7 @@
   transform: rotate(10deg);
 }
 
-.section2 .img-container .img-test2 {
+.section1 .img-container .img-test2 {
   position: absolute;
   top: 70%;
   left: 30%;
@@ -45,42 +45,42 @@
   transform: rotate(-5deg);
 }
 
-.section3 ul.collection {
+.section2 ul.collection {
   margin-top: 0;
 }
 
-.section3 ul.collection,
-.section3 ul.collection .collection-item {
+.section2 ul.collection,
+.section2 ul.collection .collection-item {
   background: transparent;
   font-size: 1.35rem;
   line-height: 1.2;
   border: none;
 }
 
-.section4 ul.collection.with-header {
+.section3 ul.collection.with-header {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.section4 ul.collection.with-header .collection-item {
+.section3 ul.collection.with-header .collection-item {
   font-size: 1.35rem;
   line-height: 1.2;
   padding: 1rem 1.5rem;
 }
 
-.section5 ul {
+.section4 ul {
   font-size: 1.4rem;
   font-style: italic;
   font-weight: 500;
   padding: 1rem 1.5rem;
 }
 
-.section5 ul li {
+.section4 ul li {
   list-style-type: disc;
 }
 
-.section5 #services-punch-line {
+.section4 #services-punch-line {
   border-left: 3px solid var(--yellow);
   margin: 2rem 0rem 0rem 2rem;
   padding: 2rem;
@@ -89,8 +89,17 @@
   transition: all 1s;
 }
 
-.section5 p#services-punch-line:hover {
+.section4 p#services-punch-line:hover {
   background: linear-gradient(to left, #fff, #9d9fa1);
   color: var(--yellow);
   transform: translatex(5px);
+}
+
+.section4 #coverage-lines {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.section4 #coverage-lines .material-icons {
+  color: var(--yellow);
 }
