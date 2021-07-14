@@ -1,30 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   // navbar appears on scroll down for index page only
   if (document.getElementById('showcase-wrapper')) {
-    var navbar = document.getElementById('nav-holder');
-    var hiddenElList = document.querySelectorAll('.hidden');
-    var scrolled = false;
+    var navbarEl = document.getElementById('nav-holder');
+    var hamburgerEl = document.querySelector('.hamburger');
+    var navLinksEl = document.querySelectorAll('.nav-link-border');
 
     window.onscroll = function () {
-      if (window.pageYOffset / window.innerHeight > 0.05) {
-        hiddenElList.forEach((el) => {
-          el.classList.remove('hidden');
-          if (!scrolled) {
-            // el.style.transform = `translateX(-${window.innerWidth})`;
-          }
-          // setTimeout(function () {
-          //   el.style.transform = 'translateX(0)';
-          // }, 500);
-          scrolled = true;
-        });
-      } else {
-        hiddenElList.forEach((el) => el.classList.add('hidden'));
-        scrolled = false;
-      }
       if (window.pageYOffset / window.innerHeight > 0.9) {
-        navbar.classList.remove('nav-transparent');
+        navbarEl.classList.remove('nav-transparent');
+        navbarEl.classList.remove('z-depth-0');
+        hamburgerEl.classList.remove('yellow-txt');
+        hamburgerEl.classList.add('grey-txt');
+        navLinksEl.forEach(el => el.classList.remove('nav-link-border'))
       } else {
-        navbar.classList.add('nav-transparent');
+        navbarEl.classList.add('nav-transparent');
+        navbarEl.classList.add('z-depth-0');
+        hamburgerEl.classList.remove('grey-txt');
+        hamburgerEl.classList.add('yellow-txt');
+        navLinksEl.forEach(el => el.classList.add('nav-link-border'))
       }
     };
   }
