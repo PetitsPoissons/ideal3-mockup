@@ -2,25 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // navbar appears on scroll down for index page only
   if (document.getElementById('showcase-wrapper')) {
     var navbar = document.getElementById('nav-holder');
-    var hiddenElList = document.querySelectorAll('.hidden');
-    var scrolled = false;
 
-    window.onscroll = function () {
-      if (window.pageYOffset / window.innerHeight > 0.05) {
-        hiddenElList.forEach((el) => {
-          el.classList.remove('hidden');
-          if (!scrolled) {
-            // el.style.transform = `translateX(-${window.innerWidth})`;
-          }
-          // setTimeout(function () {
-          //   el.style.transform = 'translateX(0)';
-          // }, 500);
-          scrolled = true;
-        });
-      } else {
-        hiddenElList.forEach((el) => el.classList.add('hidden'));
-        scrolled = false;
-      }
+    window.onscroll = function () {—
       if (window.pageYOffset / window.innerHeight > 0.9) {
         navbar.classList.remove('nav-transparent');
       } else {
