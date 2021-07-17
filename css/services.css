@@ -2,47 +2,42 @@
   font-size: 1.6rem;
 }
 
-.section1 .img-container {
+.section1 .row.img-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 20rem;
-  min-width: 20rem;
-  position: relative;
-  margin: 1rem 0;
 }
 
 .section1 .img-container img {
+  /* position: absolute; */
   width: 20rem;
   height: 18rem;
   border: 7px solid var(--grey);
   border-radius: 2px;
+  margin: 0;
 }
 
-.section1 .img-container .img-test1 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  /* transform: translateY(50%); */
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
-}
-
-.section1 .img-container .img-test2 {
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  /* transform: translateY(50%); */
+.section1 .img-container img#img-test1 {
+  /* position: absolute; */
+  /* top: 10%;
+  left: 5%; */
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   transform: rotate(-5deg);
+}
+
+.section1 .img-container img#img-test2 {
+  /* position: absolute; */
+  /* top: 80%;
+  left: 25%; */
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .section2 ul.collection {
@@ -57,10 +52,14 @@
   border: none;
 }
 
+.section3 .row {
+  margin-bottom: 0;
+}
+
 .section3 ul.collection.with-header {
+  margin: 2rem 0;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border: 5px groove var(--yellow);
 }
 
 .section3 ul.collection.with-header .collection-item {
@@ -86,13 +85,17 @@
   padding: 2rem;
   background: var(--grey-gradient);
   border-radius: 5px;
-  transition: all 1s;
+  transition: all 0.2s;
 }
 
 .section4 p#services-punch-line:hover {
   background: linear-gradient(to left, #fff, #9d9fa1);
   color: var(--yellow);
-  transform: translatex(5px);
+  transform: translatex(3px);
+}
+
+.section4 #services-punch-line span {
+  font-weight: 600;
 }
 
 .section4 #coverage-lines {
@@ -102,4 +105,15 @@
 
 .section4 #coverage-lines .material-icons {
   color: var(--yellow);
+}
+
+/* ------- Media Queries ------- */
+@media screen and (min-width: 1400px) {
+  .section1 .row.img-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .section1 .section-paragraph {
+    margin-right: 3rem;
+  }
 }
