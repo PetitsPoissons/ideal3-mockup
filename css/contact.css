@@ -1,23 +1,15 @@
-#contact-wrapper {
+body {
   background: #fff;
-  height: 100vh;
-  position: relative;
 }
 
 #contact {
-  margin-top: 6rem;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-top: 8rem;
 }
 
 .contact-heading {
   text-transform: uppercase;
   font-family: var(--montserrat);
   font-size: 3.5rem;
-  /* letter-spacing: 3px;
-  margin-right: -3px; */
   margin-bottom: 5rem;
   text-align: center;
   position: relative;
@@ -80,17 +72,28 @@
 }
 
 #contact .input-field .btn:hover {
-  color: var(--blue);
-  transform: translateY(-2px);
+  color: #fff;
+  opacity: 0.9;
+  transform: scale(0.98);
 }
 
 #footer-img {
   width: 100vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 #footer-img img {
   width: 100%;
 }
+
+#success-card h4 {
+  color: #fff;
+}
+
+/* ------- Media Queries ------- */
+/* @media screen and (min-height: 900px) {
+  #footer-img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+} */

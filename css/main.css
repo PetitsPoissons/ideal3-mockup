@@ -225,6 +225,29 @@ nav ul li:hover {
   transition: 2s;
 } */
 
+/* ------- Sidenav ------- */
+ul.sidenav {
+  /* background: var(--blue-gradient); */
+  background: radial-gradient(
+    circle,
+    rgba(250, 250, 250) 0%,
+    rgb(215, 215, 215) 100%
+  );
+}
+
+ul.sidenav li {
+  margin: 2rem;
+}
+
+ul.sidenav a {
+  font-family: (var(--montserrat));
+  font-size: 2rem;
+}
+
+ul.sidenav a:hover {
+  color: var(--yellow);
+}
+
 /* ------- Footer ------- */
 .footer-home {
   font-family: var(--montserrat);
