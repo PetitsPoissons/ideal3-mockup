@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navbarEl.classList.remove('z-depth-0');
         hamburgerEl.classList.remove('yellow-txt');
         hamburgerEl.classList.add('grey-txt');
-        navLinksEl.forEach(el => el.classList.remove('nav-link-border'))
+        navLinksEl.forEach((el) => el.classList.remove('nav-link-border'));
       } else {
         navbarEl.classList.add('nav-transparent');
         navbarEl.classList.add('z-depth-0');
         hamburgerEl.classList.remove('grey-txt');
         hamburgerEl.classList.add('yellow-txt');
-        navLinksEl.forEach(el => el.classList.add('nav-link-border'))
+        navLinksEl.forEach((el) => el.classList.add('nav-link-border'));
       }
     };
   }
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   M.Slider.init(sliderEl, {
     indicators: false,
     height: 500,
+    interval: 3000,
   });
 
   // initialize parallax
