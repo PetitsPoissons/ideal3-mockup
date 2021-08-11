@@ -1,16 +1,37 @@
-body {
-	background: #fff;
+#contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
 }
 
-#contact {
-	margin-top: 8rem;
+section#contact {
+	background-image: url('../images/ideal3-backgrounds/minneapolis-bg.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#contact .container {
+	background: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 0 4rem;
+	color: #000;
 }
 
 .contact-heading {
 	text-transform: uppercase;
 	font-family: var(--montserrat);
-	font-size: 3.5rem;
-	margin-bottom: 5rem;
+	font-size: 3rem;
+	margin: 3rem 0 5rem;
 	text-align: center;
 	position: relative;
 }
@@ -31,41 +52,51 @@ body {
 	font-size: 2rem;
 }
 
+#contact #contact-ideal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 #contact .contact-info {
 	font-size: 1.5rem;
-	border-left: 2px solid var(--yellow);
+	border-left: 3px groove var(--grey);
 }
 
 #contact .contact-info span {
 	display: block;
 }
 
+.input-field input + label,
+.input-field textarea + label {
+	color: #000;
+}
+
 .input-field i.active {
-	color: var(--turquoise) !important;
+	color: var(--yellow) !important;
 }
 
 .input-field input:active + label,
 .input-field input:focus + label {
-	color: var(--turquoise) !important;
+	color: var(--yellow) !important;
 }
 .input-field textarea:active + label,
 .input-field textarea:focus + label {
-	color: var(--turquoise) !important;
+	color: var(--yellow) !important;
 }
 
+.input-field input,
 .input-field input:active,
-.input-field input:focus {
-	border-bottom: 1px solid var(--turquoise) !important;
-	box-shadow: 0 1px 0 0 var(--turquoise) !important;
-}
+.input-field input:focus,
+.input-field textarea,
 .input-field textarea:active,
 .input-field textarea:focus {
-	border-bottom: 1px solid var(--turquoise) !important;
-	box-shadow: 0 1px 0 0 var(--turquoise) !important;
+	border-bottom: 1px solid var(--yellow) !important;
+	box-shadow: 0 1px 0 0 var(--yellow) !important;
 }
 
 #contact .input-field .btn {
-	background-color: var(--turquoise);
+	background-color: var(--yellow);
 	margin: 1rem 0;
 	border-radius: 0.5rem;
 	transition: all 0.5s;
@@ -99,15 +130,30 @@ body {
 	left: 0;
 }
 
+/* footer.footer-home {
+	width: 100vw;
+	position: fixed;
+} */
+
 #success-card h4 {
 	color: #fff;
 }
 
 /* ------- Media Queries ------- */
-/* @media screen and (min-height: 900px) {
-  #footer-img {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
-} */
+@media screen and (max-width: 500px) {
+	#contact .container {
+		margin: 3rem auto !important;
+	}
+	footer.footer-home {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#contact .container {
+		padding: 2rem 5rem;
+	}
+	.contact-heading {
+		font-size: 3.5rem;
+	}
+}

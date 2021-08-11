@@ -1,205 +1,99 @@
-/* ------- Showcase ------- */
-#showcase-wrapper {
-  width: 100%;
-  height: 100vh !important;
-  position: relative;
-}
-
-/* ------- Navbar ------- */
-#menu-holder {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* ------- Slider ------- */
-#slider-holder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh !important;
-  z-index: -1;
-}
-
-.slider-wrapper {
-  width: 100%;
-  height: 100vh !important;
-  position: relative;
-  background: transparent;
-  padding-bottom: 10px;
-}
-
-.slider-holder {
-  width: 100%;
-  height: 100vh !important;
-  position: fixed;
-  z-index: -1;
-}
-
-.slider .slides li .caption {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important; */
-  font-family: var(--montserrat);
-
-  /* background: var(--grey-gradient);
-  padding: 0 10px; */
-}
-
-.slider .slides li .caption h3, .slider .slides li .caption h4 {
-  line-height: 1.3;
-}
-
-.slider .slides li .caption h3 {
-  font-weight: 700;
-  font-size: 2.3rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--anthracite);
-  -webkit-text-fill-color: var(--yellow);
-}
-
-.slider .slides li .caption h4 {
-  font-weight: 600;
-  font-size: 1.8rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-  -webkit-text-fill-color: #fff;
-}
-
-.slider .indicators .indicator-item {
-  background: var(--grey);
-}
-
-.slider .indicators .indicator-item.active {
-  background: var(--yellow);
-}
-
-/* ------- About Text ------- */
-.about-wrapper {
-  /* width: 100%;
+#about {
+	/* width: 100%;
   border-radius: 5px; */
-  background: var(--grey-gradient);
-  padding-top: 2rem;
+	background: var(--grey-gradient);
+	padding-top: 5rem;
 }
 
 #about-text {
-  margin: 0 auto 3rem auto;
+	margin: 0 auto 3rem auto;
 }
 
 #about-text p {
-  margin: auto 3rem;
+	margin: auto 0;
 }
 
 #about-punch-line {
-  margin: 3rem;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.8;
+	margin: 3rem 0;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 1.8;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 #card-panel-home {
-  margin: 3rem 3rem 2rem 3rem;
-  font-family: var(--montserrat);
+	margin: 3rem 0 2rem;
+	font-family: var(--montserrat);
+	text-align: center;
 }
 
 #card-panel-connect {
-  margin: 3rem 6rem;
+	margin: 0 0 1.5rem;
 }
 
 #card-panel-connect .card-title {
-  font-family: var(--montserrat);
-  font-weight: 500;
+	font-family: var(--montserrat);
+	font-weight: 500;
 }
 
 #card-panel-connect ul.collection {
-  margin-top: 0;
-  border-radius: 5px;
-  border: 1px solid var(--grey);
+	margin-top: 0;
+	border-radius: 5px;
+	border: 1px solid var(--grey);
 }
 
 #card-panel-connect ul.collection,
 #card-panel-connect ul.collection .collection-item {
-  font-size: 1.35rem;
-  line-height: 1.2;
+	font-size: 1.35rem;
+	line-height: 1.2;
 }
 
 #card-panel-connect ul i {
-  color: var(--yellow);
-  background: radial-gradient(
-    circle,
-    var(--anthracite) 0%,
-    var(--grey) 100%
-  );
+	color: var(--yellow);
+	background: radial-gradient(circle, var(--anthracite) 0%, var(--grey) 100%);
 }
 
 #card-panel-connect ul a {
-  color: var(--anthracite);
-}
-
-/* ------- Footer ------- */
-.about-wrapper .row {
-  margin: 0;
+	color: var(--anthracite);
 }
 
 /* ------- Media Queries ------- */
 @media screen and (max-width: 500px) {
-  .slider .slides li .caption h3, .slider .slides li .caption h4 {
-    line-height: 1.2;
-  }
-  .slider .slides li .caption h3, .slider .slides li .caption h4 {
-    font-size: 1.7rem;
-  }
-  #card-panel-connect {
-    margin: 0 3rem 1.5rem 3rem;
-  }
+	#card-panel-connect {
+		margin: 0 0 1.5rem;
+	}
 }
 
 @media screen and (max-width: 400px) {
-  #card-panel-home {
-    margin: 3rem 1.5rem 1.5rem 1.5rem;
-  }
-  #about-text p {
-    margin: 0 1.5rem 0 1.5rem;
-  }
-  #card-panel-connect {
-    margin: 0 1.5rem 1.5rem 1.5rem;
-  }
-  #about-punch-line {
-    margin: 1.5rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .slider .slides li .caption h3, .slider .slides li .caption h4 {
-    line-height: 1.5;
-  }
-  .slider .slides li .caption h3 {
-    font-size: 3rem;
-  }
-  .slider .slides li .caption h4 {
-    font-size: 2.3rem;
-  }
+	#card-panel-home {
+		margin: 3rem 1.5rem 1.5rem 1.5rem;
+	}
+	#about-text p {
+		margin: 0 1.5rem 0 1.5rem;
+	}
+	#card-panel-connect {
+		margin: 0 1.5rem 1.5rem 1.5rem;
+	}
+	#about-punch-line {
+		margin: 1.5rem;
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
 }
 
 @media screen and (min-width: 992px) {
-  #nav-border {
-    display: block;
-  }
-  #card-panel-home {
-    margin: 3rem 3rem 2rem 0;
-  }
-  #about-text p {
-    margin: auto 3rem auto 0;
-  }
-  #about-punch-line{
-    margin: 3rem 0;
-  }
-  #card-panel-connect {
-    margin: 3rem 0;
-  }
+	#card-panel-home {
+		margin: 3rem 3rem 2rem 0;
+	}
+	#about-text p {
+		margin: auto 3rem auto 0;
+	}
+	#about-punch-line {
+		margin: 3rem 0;
+	}
+	#card-panel-connect {
+		margin: 3rem 0;
+	}
 }
