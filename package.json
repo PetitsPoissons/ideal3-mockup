@@ -24,6 +24,7 @@
 		"webpack-cli": "^4.8.0"
 	},
 	"dependencies": {
+		"image-webpack-loader": "^7.0.1",
 		"jquery": "^3.6.0",
 		"materialize-css": "^1.0.0-rc.2"
 	}

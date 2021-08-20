@@ -30,10 +30,10 @@ module.exports = {
 							name(file) {
 								return '[path][name].[ext]';
 							},
-							// publicPath: function (url) {
-							// 	return url.replace('../', '/assets/');
-							// },
 						},
+					},
+					{
+						loader: 'image-webpack-loader',
 					},
 				],
 			},
