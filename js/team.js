@@ -1,4 +1,11 @@
 require('materialize-css');
+require('../images/ideal3-logo/ideal3-logo-best.png');
+require('../images/ideal3-backgrounds/london-skyscrapers.jpg');
+require('../images/ideal3-adam/adam-sm-72dpi.jpg');
+require('../images/ideal3-backgrounds/london-skyscrapers2.jpg');
+require('../images/ideal3-terri/terri-sm-72dpi.jpg');
+require('../images/ideal3-backgrounds/london-skyscrapers3.jpg');
+require('../images/ideal3-nati/natalie-sm-72dpi.jpg');
 
 document.addEventListener('DOMContentLoaded', () => {
 	// initialize sidenav

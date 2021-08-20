@@ -1,4 +1,9 @@
 require('materialize-css');
+require('../images/ideal3-logo/ideal3-logo-best.png');
+require('../images/ideal3-backgrounds/losAngeles-bg.jpeg');
+require('../images/ideal3-backgrounds/waterslide2.jpg');
+require('../images/ideal3-backgrounds/bridge.jpg');
+require('../images/ideal3-backgrounds/concert.jpg');
 
 document.addEventListener('DOMContentLoaded', () => {
 	// initialize sidenav
