@@ -1,0 +1,30 @@
+{
+	"name": "ideal3-mockup",
+	"version": "1.0.0",
+	"description": "Website for ideal3",
+	"main": "script.js",
+	"scripts": {
+		"webpack": "webpack --watch",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PetitsPoissons/ideal3-mockup.git"
+	},
+	"author": "Sandrine Poissonnet",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PetitsPoissons/ideal3-mockup/issues"
+	},
+	"homepage": "https://github.com/PetitsPoissons/ideal3-mockup#readme",
+	"devDependencies": {
+		"file-loader": "^6.2.0",
+		"webpack": "^5.51.1",
+		"webpack-bundle-analyzer": "^4.4.2",
+		"webpack-cli": "^4.8.0"
+	},
+	"dependencies": {
+		"jquery": "^3.6.0",
+		"materialize-css": "^1.0.0-rc.2"
+	}
+}
